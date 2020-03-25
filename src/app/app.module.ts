@@ -15,10 +15,13 @@ import { MatListModule } from '@angular/material/list';
 
 
 import { AppComponent } from './app.component';
+import { MainNavComponent } from './main-nav/main-nav.component';
+import { LayoutModule } from '@angular/cdk/layout';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainNavComponent
   ],
   imports: [
     BrowserModule,
@@ -31,6 +34,7 @@ import { AppComponent } from './app.component';
     MatIconModule,
     MatSidenavModule,
     MatListModule,
+    LayoutModule,
   ],
   providers: [NewsApiService],
   bootstrap: [AppComponent]
